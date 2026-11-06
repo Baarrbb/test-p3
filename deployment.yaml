@@ -30,5 +30,5 @@ spec:
   ports:
   - port: 8888
     targetPort: 8888
-    protocol: TCP
+    # protocol: TCP
     # nodePort: 30888
