@@ -24,10 +24,11 @@ kind: Service
 metadata:
   name: playground
 spec:
-  type: NodePort
+  # type: NodePort
   selector:
     app: playground
   ports:
   - port: 8888
     targetPort: 8888
-    nodePort: 30888
+    protocol: TCP
+    # nodePort: 30888
